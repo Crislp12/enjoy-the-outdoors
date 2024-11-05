@@ -1,11 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: black !important; padding: 12px">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="color: #fff">ParkPal</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="background-color: #fff"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#" style="color: #fff">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: #fff">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: #fff">Pricing</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="home-page-imgs"
+        style="
+          background-image: url(https://photopxl.com/pxl-content/uploads/2019/06/1.-Title-Image-22Western-Mountain-Landscape-Photography22.jpg);
+          width: 100%;
+          height: 500px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        "
+      >
+      </div>
+    </header>
+    <main>
+      <div style="margin: 2%">
+        <h2 class="mission-title">Our Mission</h2>
+        <hr />
+        <p class="mission-text">
+          ParkPal expeditions is committed to sustaining the character and integrity of each place we visit—its
+          environment, culture, and heritage, as well as the well-being of its residents. <br />In providing authentic
+          travel experiences, we strive to support local economies in our choice of services. At the same time, we
+          believe that the powerful positive effects <br />
+          of sustainable travel go beyond the long-term economic benefits, inspiring passionate stewards committed to
+          protecting the places we visit.
+        </p>
+      </div>
+      <br />
+      <div class="grid-container">
+        <div
+          class="card-g"
+          style="background-image: url(https://i.pinimg.com/564x/05/09/15/0509155ec9a43867edabd952b240e0d7.jpg)"
+        ></div>
+        <div class="card-g">
+          <p>
+            Park Pal is a global nonprofit organization that uses the power of science, exploration, education and
+            storytelling to illuminate and protect the wonder of the world.
+          </p>
+        </div>
+      </div>
+
+      <h2 class="mission-title">How Do You Like to Travel?</h2>
+      <p class="mission-text">
+        By train or small ship? In a group of like-minded travelers or with a traveling companion you choose? <br />
+        Select the type of trip you're looking for below.
+      </p>
+      <a href="" class="viewTravel">View All Trips</a>
+
+      <div class="trips-container">
+        <div class="card" style="width: 20rem">
+          <img
+            src="https://i.pinimg.com/736x/37/ea/8a/37ea8a12cb8a5b8194ef6ee0fa84234d.jpg"
+            class="card-img-top"
+            style="height: 212px"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">Day Tours</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem">
+          <img
+            src="https://i.pinimg.com/564x/39/28/1f/39281fd67ece9535ed0cbda869770f78.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">Lakes</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem">
+          <img
+            src="https://i.pinimg.com/564x/6c/ac/c6/6cacc666727c60c081087bde61bcfb09.jpg"
+            class="card-img-top"
+            style="height: 212px"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">Camping</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem">
+          <img
+            src="https://i.pinimg.com/564x/13/10/c3/1310c3998d88d42f1794dafd940b8c2f.jpg"
+            class="card-img-top"
+            style="height: 212px"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">Camping</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer style="background-color: black;">
+        <div class="footer-container-g">
+            <div class="footer-g">
+              <h4 class="footer-items-titles">Plan A Trip</h4>
+              <ul class="footer-items">
+                <li>Find a Trip</li>
+                <li>Why Travel with Us</li>
+                <li>Special Offers</li>
+                <li>Stories From Our Travelers</li>
+              </ul>
+            </div>
+            <div class="footer-g">
+              <h4 class="footer-items-titles">Support</h4>
+              <ul class="footer-items">
+                <li>Contact Us</li>
+                <li>Frenquently Asked Questions</li>
+                <li>Tarvel Agents</li>
+                <li>Booking Policies</li>
+              </ul>
+            </div>
+            <div class="footer-g">
+              <h4 class="footer-items-titles">Company</h4>
+              <ul class="footer-items">
+                <li>Terms & Conditions</li>
+                <li>Press Releases</li>
+                <li>Follow Us</li>
+              </ul>
+              <div class="svgs-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 26px; fill: #fff">
+                  <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                  />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" style="width: 23.5px; fill: #fff">
+                  <path
+                    d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"
+                  />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 23.5px; fill: #fff">
+                  <path
+                    d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+    </footer>
+  </body>
 </html>
