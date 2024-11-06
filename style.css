@@ -72,7 +72,7 @@
   display: grid;
   width: 65%;
   margin: auto;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: 300px;
 }
 
@@ -109,4 +109,136 @@
   padding: 0%;
   display: flex;
   justify-content: space-around;
+}
+
+
+/* national-parks-css */
+
+.radio-container{
+  display: flex;
+  gap: 30px;
+  margin-left: 7%;
+  margin-top: 3%;
+}
+
+
+.radio-container label {
+  font-size: 22px;
+}
+
+.radio-container input[type="radio"] {
+  transform: scale(1.6);
+  margin-right: 10px;
+}
+
+#categorySelect{
+  width: 16%;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 6.8%;
+  margin-top: 2%;
+}
+
+#table-mount{
+  margin-top: 3%;
+}
+
+
+/* "mountain-filter-title */
+
+.mountain-filter-title{
+  text-align: center;
+  margin-top: 2%;
+}
+
+.mountain-filter-container{
+  display: flex;           /* Use flexbox layout */
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically */
+  margin-bottom: 3%;
+}
+
+#mountain-filter{
+  width: 20%;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 1%;
+}
+
+.mountains-gallary{
+  display: grid;
+  gap: 10px;
+  width: 70%;
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-auto-rows: 310px;
+}
+
+.mountain-gallary{
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  height: 320px;
+}
+
+.mountain-gallary-cards {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;
+  background: black;
+  font-size: 1.4rem;
+  color: #fff;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  height: 100%;
+  width: 100%;
+  padding: 2%;
+  border-radius: 4px;
+  transition: all 500ms;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mountain-gallary-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  font-size: 1.4rem;
+  color: #fff;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  height: 100%;
+  width: 30%;
+  padding: 2%;
+  border-radius: 4px;
+  transition: all 500ms;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mountain-gallary-card:hover {
+  /* box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em; */
+  transform: translateY(-3px) scale(1.1);
+}
+
+.btn {
+  background-color: black !important;
+  border-color: black !important;
+}
+
+.btn:hover{
+  background-color: rgb(75, 74, 74) !important;
+}
+
+.modal-facts{
+  display: flex;
+  align-items: center
+}
+
+.modal-text{
+ margin-left: 1%;
 }
