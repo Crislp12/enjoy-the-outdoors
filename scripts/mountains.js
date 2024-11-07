@@ -30,7 +30,7 @@ mountainfilter.addEventListener('change', () => {
   } else {
     gallleryContainer.style.display = 'none';
     singleGalleryContainer.style.display = 'flex';
-    singleGalleryContainer.innerHTML = ""
+    singleGalleryContainer.innerText = ""
     const mountain = mountainsArray.find((mountain)=> mountain.name === input);
     createCardElement([mountain])
   }
@@ -52,9 +52,9 @@ function createCardElements(mountainsArray) {
     button.addEventListener('click', () => {
       modalTitle.innerText = mountain.name;
       modalBody.innerText = mountain.desc;
-      modaltextElvation.innerText = mountain.elevation;
-      modaltextLat.innerText = mountain.coords.lat;
-      modaltextLng.innerText = mountain.coords.lng;
+      modaltextElvation.innerText = `${mountain.elevation} ft`;
+      modaltextLat.innerText = mountain.coords.lat + '°';
+      modaltextLng.innerText = mountain.coords.lng + '°';
     });
 
     cardDiv.appendChild(button);
@@ -80,9 +80,9 @@ function createCardElement(mountainsArray) {
     button.addEventListener('click', () => {
       modalTitle.innerText = mountain.name;
       modalBody.innerText = mountain.desc;
-      modaltextElvation.innerText = mountain.elevation;
-      modaltextLat.innerText = mountain.coords.lat;
-      modaltextLng.innerText = mountain.coords.lng;
+      modaltextElvation.innerText = `${mountain.elevation} ft`;
+      modaltextLat.innerText = mountain.coords.lat + '°';
+      modaltextLng.innerText = mountain.coords.lng + '°';
     });
 
     cardDiv.appendChild(button);
